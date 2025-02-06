@@ -1,8 +1,6 @@
 # minecraftStatus-discordBot
 ## Um bot para o Discord que monitora o status do seu servidor
 
----
-
 ![exemplo](https://i.imgur.com/TORevEn.png)
 
 ---
