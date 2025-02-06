@@ -1,0 +1,10 @@
+{
+    "token": "xxxxxxxxxxxxx",
+    "statusChannel": "123456789101112",
+    "server": {
+      "ip": "hypixel.net", 
+      "port": "", 
+      "serverType": "java"
+    }
+  }
+  
