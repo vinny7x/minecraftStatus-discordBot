@@ -1,6 +1,8 @@
 # minecraftStatus-discordBot
 ## Um bot para o Discord que monitora o status do seu servidor
 
+![exemplo](https://i.imgur.com/TORevEn.png)
+
 ---
 
 ### Como instalar:
@@ -10,7 +12,7 @@
 > `npm install`
 3. Após configurar o bot conforme as instruções abaixo, inicie-o com:  
 > `node .`
-Se tudo estiver configurado corretamente, o bot iniciará e enviará o status do servidor no canal escolhido.  
+- Se tudo estiver configurado corretamente, o bot iniciará e enviará o status do servidor no canal escolhido.  
 
 ---
 
@@ -33,3 +35,11 @@ Se tudo estiver configurado corretamente, o bot iniciará e enviará o status do
 ```
 
 Após isso, o bot já estará funcionando perfeitamente. Caso tenha gostado do projeto, deixe uma ⭐ no projeto :D
+
+---
+
+# Atualizações:
+
+- 1.1.0
+  - Agora na embed que mostra o ip do servidor, é mostrado tambem o ícone do servidor minecraft, caso seja a edição Java
+  - ![exemplo](https://i.imgur.com/drS7fg7.png)
