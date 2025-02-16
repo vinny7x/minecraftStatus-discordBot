@@ -42,4 +42,4 @@ Após isso, o bot já estará funcionando perfeitamente. Caso tenha gostado do p
 
 - 1.1.0
   - Agora na embed que mostra o ip do servidor, é mostrado tambem o ícone do servidor minecraft, caso seja a edição Java
-  - ![exemplo](https://i.imgur.com/drS7fg7.png)
+   ![exemplo](https://i.imgur.com/drS7fg7.png)
