@@ -41,7 +41,13 @@ async function atualizarStatus(mensagem, intervalo, client) {
       .setTitle("Status")
       .setTimestamp()
       .setFooter({ text: "Atualizado" });
+    if(dados.icon) {
+      const iconBuffer = Buffer.from(dados.icon.split(',')[1], 'base64');
+      
+     attachment = new Discord.AttachmentBuilder(iconBuffer, { name: 'server-icon.png' });
+      embed.setThumbnail(`attachment://${attachment.name}`);
 
+  }
     if (dados.online) {
       embed2.setColor("Green")
         .setThumbnail(
@@ -87,7 +93,7 @@ async function atualizarStatus(mensagem, intervalo, client) {
     }
 
     // Editando a mensagem e enviando o ícone do servidor como anexo, se houver
-    await mensagem.edit({ content: "", embeds: [embed, embed2] });
+    await mensagem.edit({ content: "", embeds: [embed, embed2], files: [attachment]  });
   } catch (error) {
     console.error("Erro ao atualizar status:", error);
   }
@@ -102,8 +108,10 @@ async function obterStatusServidor() {
       ? `${baseUrl}/2/${ip}` 
       : `${baseUrl}/${serverType === "java" ? "3" : "bedrock/3"}/${ip}:${port}`;
 
-    let res = await fetch(url);
-    return await res.json();
+    let r = await fetch(url)
+    let res = await r.json()
+    console.log(res)
+    return await res;
   } catch (error) {
     console.error("Erro ao obter status do servidor:", error);
     return { online: false };
